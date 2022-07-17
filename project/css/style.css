@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components {
+    .row {
+        @apply flex flex-wrap w-row -mx-4;
+    }
+   
+}
+/* #toggle:checked ~ label div.tggole-dot{
+  @apply translate-x-3;
+} */
+.back-img1{
+    background-image: url('../images/img2.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .back-img_page1{
+    background-image:linear-gradient(155deg, rgb(187, 167, 167) 50% , transparent 50% ), url('../images/bg1.jpg');
+    background-repeat: no-repeat;
+  }
+  
+
+  .back-page{
+    background:linear-gradient(205deg, rgb(163, 144, 144) 50% , #ffff 50% );
+  }
+  /* .bgcolor{
+    background: rgb(163, 144, 144);
+  }
+  
+  .bg_in{
+    background-color: rgb(187, 124, 88);
+  } */
+  .back-img_page2{
+    background-image:linear-gradient(20deg, rgb(187, 167, 167) 50% , transparent 50% ), url('../images/bg2.jpg');
+    background-repeat: no-repeat;
+  }
+  .pr-bgimg{
+    background-image: url('../images/pri-bg.jpg');
+    background-repeat: no-repeat;
+  }
+
+  .prbgimgsec1{
+    background-image: url('../images/pqimg1.jpg');
+    background-repeat: no-repeat;
+  }
+  .prbgimgsec2{
+    background-image: url('../images/pqimg2.jpg');
+    background-repeat: no-repeat;
+  }
+  .prbgimgsec3{
+    background-image: url('../images/pqimg3.jpg');
+    background-repeat: no-repeat;
+  }
+  

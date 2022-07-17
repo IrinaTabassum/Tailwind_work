@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+    <div class="p-10">
+        <div>
+            <input type="checkbox" name="" class="all" value="all" id="" onchange="checkall()">
+        <label for="" > all</label>
+        </div>
+       
+        <div>
+            <input type="checkbox" name="" class="cb" value="a" id="">
+            <label for="">a</label>
+        </div>
+       <div>
+        <input type="checkbox" name="" class="cb" value="b" id="">
+        <label for="">b</label>
+       </div>
+       <div>
+        <input type="checkbox" name="" class="cb text-black" value="c" id="">
+    <label for=""> c</label>
+    </div>
+       
+    </div>
+    <script>
+        const chakbox = document.querySelectorAll(".cb");
+        console.log(chakbox);
+        const allcheck = document.querySelector(".all");
+        function checkall(){
+            if(allcheck.checked == true){
+                chakbox.forEach((p)=>{
+                    p.checked = true;
+                })
+            }
+            else{
+                chakbox.forEach((p)=>{
+                    p.checked = false;
+                })
+            }
+        } 
+        
+    </script>
+</body>
+</html>
